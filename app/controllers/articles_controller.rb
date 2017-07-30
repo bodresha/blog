@@ -5,8 +5,12 @@ class ArticlesController < ApplicationController
   def index
     
     @articles = Article.all
+    @articles.order! 'creat_at DESC'
+    
     
   end
+  
+  
   
   
   def new
@@ -44,6 +48,7 @@ class ArticlesController < ApplicationController
   end
   
   def show
+    
   end
   
   def destroy
