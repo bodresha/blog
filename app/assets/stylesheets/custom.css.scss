@@ -40,6 +40,11 @@ $navbar-default-bg: #dee5ef;
   background-color: #c45c44;
 }
 
+.article-meta-details {
+  border-top: 1px solid #eaeaea;
+  margin: 10px;
+}
+
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
@@ -68,7 +73,7 @@ footer {
   color: #777;
 }
 
-footerv a:hover {
+footer a:hover {
   color: #222;
 }
 

@@ -9,6 +9,11 @@
         </div>
         <div class='article-body'>
           <%= truncate(article.decsription, length: 100) %>
+          <div class='article-meta-details'>
+           <h5><span class="glyphicon glyphicon-time"></span> Post by: <%= article.user.username if article.user %>,
+                  <%= time_ago_in_words(article.created_at) %> ago,
+                  Last Updated: <%= time_ago_in_words(article.updated_at) %> ago</h5>
+          </div>                     
         </div>
         <div class='article-actions'>
           <%= link_to 'Edit this article', edit_article_path(article), class: "btn btn-xs btn-primary" %>
