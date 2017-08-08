@@ -10,9 +10,11 @@
         <div class='article-body'>
           <%= truncate(article.decsription, length: 100) %>
           <div class='article-meta-details'>
-           <h5><span class="glyphicon glyphicon-time"></span> Post by: <%= article.user.username if article.user %>,
-                  <%= time_ago_in_words(article.created_at) %> ago,
-                  Last Updated: <%= time_ago_in_words(article.updated_at) %> ago</h5>
+           <h5><span class="glyphicon glyphicon-user"></span> Posted by: <%= article.user.username if article.user %>
+           <h5><span class="glyphicon glyphicon-calendar"></span> <%= time_ago_in_words(article.created_at) %> ago,
+                  Last Updated: <%= time_ago_in_words(article.updated_at) %> ago
+                   </h5>
+                    </h5>
           </div>                     
         </div>
         <div class='article-actions'>
